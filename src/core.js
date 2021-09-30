@@ -7,7 +7,7 @@
  * @website: https://datejs.com
  */
  
-(function () {
+ (function () {
     var $D = Date, 
         $P = $D.prototype, 
         $C = $D.CultureInfo,
@@ -761,7 +761,9 @@
      */
     $P.toString = function (format) {
         var x = this;
-        
+        if(!format){
+            format = "yyyy-MM-ddTHH:mm:ssZ";
+        }
         // Standard Date and Time Format Strings. Formats pulled from CultureInfo file and
         // may vary by culture. 
         if (format && format.length == 1) {

@@ -4,6 +4,7 @@
   "description": "A Date library for browsers",
   "main": "build/date.js",
   "devDependencies": {
+    "concat-map": "0.0.1",
     "gulp": "^4.0.2",
     "gulp-jasmine": "^4.0.0",
     "gulp-concat": "^2.5.2",
@@ -12,6 +13,6 @@
     "run-sequence": "^2.2.1",
     "merge-stream": "^2.0.0"
   },
-  "author": "",
+  "author": "datejs,",
   "license": "Apache 2.0"
 }
